@@ -1,7 +1,7 @@
 # Analytical-Panel
 The **Analytical Panel** is a prototype of business intelligence. Developed for Aliansce!
 
-This **Repository** was created **only** to store this **prototype**, where it was developed for **learning the NODEJS technology**.
+This **Repository** was created **only** to store this **prototype**, where it was developed for **learning the NODEJS technology**. This **repository** is **designed for backend studies**, so **Frontend** may contain **some problems and poorly finished elements**.
 
 # Starting
 Before cloning the project, make sure you have all the tried and tested technologies below.
