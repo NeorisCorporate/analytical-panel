@@ -12,13 +12,13 @@ Before cloning the project, make sure you have all the tried and tested technolo
 
 After all the technologies above installed and with their proper configurations, it is time to clone the project and follow the steps below.
 
-**Instalando os Módulos**
+**Installing the Modules**
 ```
 $ yarn install
 ```
 This command will install all existing dependencies in the **package.json** file and the `node_modules` directory will be created along with all the modules within it.
 
-# Desenvolvido com
+# Developed with
 - [AXIOS](https://github.com/axios/axios)
 - [BOOTSTRAP](https://getbootstrap.com/)
 - [BOOTSTRAP-SELECT](https://developer.snapappointments.com/bootstrap-select/)
@@ -43,5 +43,5 @@ This command will install all existing dependencies in the **package.json** file
 [THIAGO DE BONIS C. SAAD SAUD](https://www.linkedin.com/in/thiagodebonisoficial/) - **DEVELOPER**
 
 # License
-Este projeto está licenciado sob a licença `GPL-3.0`. Veja o arquivo LICENSE.md
+This project is licensed under the `GPL-3.0` license. See the file `LICENSE.md`
 
