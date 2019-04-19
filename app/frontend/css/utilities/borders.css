@@ -1,0 +1,10 @@
+/* BORDA ESTILO CÍRCULO */
+.border-circle {
+    width:                 54px;
+	height:                54px;
+	bottom:                40px;
+    right:                 40px;
+    border-radius:         50px;
+    -moz-border-radius:    50px;
+    -webkit-border-radius: 50px;
+}

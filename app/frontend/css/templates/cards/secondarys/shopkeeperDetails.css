@@ -1,0 +1,9 @@
+/** EXTRA SMALL [SMARTPHONES] **/
+@media only screen and (min-width: 320px) {
+    .shopkeeperDetails-secondary-card-kpi-title,
+    .shopkeeperDetails-secondary-card-kpiValue-title,
+    .shopkeeperDetails-secondary-card-percentage-title    { font-size: 1.5rem; }
+    
+    .shopkeeperDetails-secondary-card-kpiValue-subtitle,
+    .shopkeeperDetails-secondary-card-percentage-subtitle { font-size: 1rem; }
+}

@@ -1,0 +1,13 @@
+.label-placeholder {
+  position:       absolute;
+  top:            0;
+  padding-top:    7px;
+  transition:     all 200ms;
+  opacity:        0.5;
+}
+
+.form-control:focus + .label-placeholder,
+.form-control:valid + .label-placeholder {
+  transform: translate3d(0, -100%, 0);
+  opacity:   1;
+}

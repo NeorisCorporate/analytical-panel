@@ -1,0 +1,86 @@
+/** EXTRA SMALL [SMARTPHONES] **/
+@media only screen and (min-width: 320px) {
+    .container-shopkeeper-secondary-card { width: 83.2%; }
+
+    .shopkeeper-secondary-card-percentage-title    { font-size: 1.2rem; }
+    .shopkeeper-secondary-card-percentage-subtitle { 
+        font-size:  0.8rem; 
+        margin-top: 0.3rem;
+    }
+
+    .shopkeeper-secondary-card-store-title,
+    .shopkeeper-secondary-card-kpiValue-title { font-size: 1rem; }
+    
+    .shopkeeper-secondary-card-store-subtitle,
+    .shopkeeper-secondary-card-kpiValue-subtitle { font-size: 0.8rem; }
+}
+
+@media only screen and (min-width: 360px) {
+    .container-shopkeeper-secondary-card { width: 85%; }
+}
+
+@media only screen and (min-width: 411px) {
+    .container-shopkeeper-secondary-card { width: 86.5%; }
+}
+
+@media only screen and (min-width: 480px) {
+    .container-shopkeeper-secondary-card { width: 89%; }
+}
+
+
+/** SMALL [SMARTPHONES] **/
+@media only screen and (min-width: 568px) {
+    .container-shopkeeper-secondary-card { width: 90.3%; }
+}
+
+@media only screen and (min-width: 576px) {
+    .container-shopkeeper-secondary-card { width: 91.5%; }
+}
+
+
+/** MEDIUM [TABLET, IPAD]**/
+@media only screen and (min-width: 731px) {
+    .container-shopkeeper-secondary-card { width: 92.5%; }
+}
+
+@media only screen and (min-width: 768px) {
+    .container-shopkeeper-secondary-card { width: 93%; }
+}
+
+/** LARGE [TABLET, IPAD] **/
+@media only screen and (min-width: 960px) {
+    .container-shopkeeper-secondary-card { width: 94.4%; }
+}
+
+@media only screen and (min-width: 992px) {
+    .container-shopkeeper-secondary-card { width: 95%; }
+}
+
+/** EXTRA LARGE [TABLET, IPAD, NOTEBOOK, DESKTOP] **/
+@media only screen and (min-width: 1024px) {
+    .container-shopkeeper-secondary-card { width: 94.7%; }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container-shopkeeper-secondary-card { width: 96.2%; }
+
+    .shopkeeper-secondary-card-percentage-title    { font-size: 1.5rem;  }
+    .shopkeeper-secondary-card-percentage-subtitle { 
+        font-size:  1rem;
+        margin-top: 0.41rem;
+    }
+
+    .shopkeeper-secondary-card-store-title,
+    .shopkeeper-secondary-card-kpiValue-title { font-size: 1.3rem; }
+    
+    .shopkeeper-secondary-card-store-subtitle,
+    .shopkeeper-secondary-card-kpiValue-subtitle { font-size: 1rem; }
+}
+
+@media only screen and (min-width: 1280px) {
+    .container-shopkeeper-secondary-card { width: 95.8%; }
+}
+
+@media only screen and (min-width: 1366px) {
+    .container-shopkeeper-secondary-card { width: 96.1%; }
+}

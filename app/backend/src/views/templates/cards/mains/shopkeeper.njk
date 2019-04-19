@@ -1,0 +1,38 @@
+<!-- EM CONSTRUÇÃO -->
+<!-- card graph [main] -->
+<main>
+    <div class="container-fluid bg-custom-lilac-2 mt-4 pt-1 shadow">
+        <div class="row">
+            <div class="col-12">
+                <div class="card bg-transparent border-0 mt-4">
+                    {% if templates.cards.main.shopkeeper %}
+                    <div class="card-header bg-transparent border-0 p-0">
+                        <h6 class="card-title shopkeeper-main-card-date-title display-4 text-center text-custom-lilac-1 ml-3 ml-md-0 mr-md-1 mb-2 pl-2 pl-sm-1 pl-md-0 pr-md-1">{{ templates.cards.main.titles.date }}</h6>
+                    </div>
+                    {% endif %}
+                    <div class="card-body mt-4 p-0 pb-2 px-3">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h1 class="shopkeeper-main-card-title {{ 'text-right text-custom-lilac-1' if templates.cards.main.shopkeeper }} {{ 'text-white' if templates.cards.main.shopkeeperDetails }} display-4">{{ templates.cards.main.titles.titleOne }}</h1>
+                                {% if templates.cards.main.shopkeeperDetails %}
+                                <h1 class="shopkeeper-main-card-subtitle display-4 text-custom-lilac-1 font-weight-lighter">{{ templates.cards.main.titles.subtitleOne }}</h1>
+                                {% endif %}
+                            </div>
+                            <div>
+                                <h1 class="shopkeeper-main-card-subtitle {{ 'text-right text-custom-lilac-1' if templates.cards.main.shopkeeper }} {{ 'text-white' if templates.cards.main.shopkeeperDetails }} display-4 font-weight-bold">{{ templates.cards.main.titles.titleTwo }}</h1>
+                                <h1 class="shopkeeper-main-card-subtitle {{ 'text-right text-custom-lilac-1 mr-1' if templates.cards.main.shopkeeper }} {{ 'text-center text-white font-weight-bold' if templates.cards.main.shopkeeperDetails }} display-4">{{ templates.cards.main.titles.subtitleTwo }}</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% if templates.cards.main.shopkeeper %}
+        <div class="row bg-light p-2">
+            <div class="col-12">
+                <input type="search" role="combobox" class="form-control" placeholder="Pesquise..." autocomplete="on" aria-autocomplete="list" aria-expanded="false">
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</main>

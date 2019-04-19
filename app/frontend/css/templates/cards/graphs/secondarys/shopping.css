@@ -1,0 +1,99 @@
+/** EXTRA SMALL [SMARTPHONES] **/
+@media only screen and (min-width: 320px) {
+    .shopping-container-main-secondary-card { margin-bottom: 8.5rem; }
+    .shopping-container-secondary-card      { width: 82.5%; }
+    .shopping-secondary-card-button-link    { margin-top: 7.5rem; }
+
+    .shopping-secondary-card-title,
+    .shopping-secondary-card-subtitle    { font-size: 1.2rem; }
+    .shopping-secondary-card-value-title { font-size: 0.9rem; }
+}
+
+@media only screen and (min-width: 360px) {
+    .shopping-container-main-secondary-card { margin-bottom: 9.5rem; }
+    .shopping-container-secondary-card      { width: 84.6%; }
+    .shopping-secondary-card-button-link    { margin-top: 8rem; }
+}
+
+@media only screen and (min-width: 375px) {
+    .shopping-container-main-secondary-card { margin-bottom: 10rem; }
+    .shopping-container-secondary-card      { width: 85.4%; }
+}
+
+@media only screen and (min-width: 411px) {
+    .shopping-container-main-secondary-card { margin-bottom: 10.5rem; }
+    .shopping-container-secondary-card      { width: 86.5%; }
+    .shopping-secondary-card-button-link    { margin-top: 9rem; }
+}
+
+@media only screen and (min-width: 480px) {
+    .shopping-container-main-secondary-card { margin-bottom: 12rem; }
+    .shopping-container-secondary-card      { width: 88.5%; }
+    .shopping-secondary-card-button-link    { margin-top: 9.5rem; }
+}
+
+/** SMALL [SMARTPHONES] **/
+@media only screen and (min-width: 568px) {
+    .shopping-container-main-secondary-card { margin-bottom: 14rem; }
+    .shopping-container-secondary-card      { width: 90.2%; }
+    .shopping-secondary-card-button-link    { margin-top: 10.5rem; }
+}
+
+@media only screen and (min-width: 600px) {
+    .shopping-secondary-card-button-link    { margin-top: 12.5rem; }
+}
+
+@media only screen and (min-width: 640px) {
+    .shopping-container-main-secondary-card { margin-bottom: 17rem; }
+    .shopping-container-secondary-card      { width: 91.5%; }
+    .shopping-secondary-card-button-link    { margin-top: 11rem; }
+}
+
+/** MEDIUM [TABLET, IPAD]**/
+@media only screen and (min-width: 731px) {
+    .shopping-container-secondary-card      { width: 92.5%; }
+    .shopping-secondary-card-button-link    { margin-top: 12rem; }
+}
+
+@media only screen and (min-width: 768px) {
+    .shopping-container-main-secondary-card { margin-bottom: 15rem; }
+    .shopping-container-secondary-card      { width: 92.7%; }
+    .shopping-secondary-card-button-link    { margin-top: 15rem; }
+}
+
+@media only screen and (min-width: 800px) {
+    .shopping-container-main-secondary-card { margin-bottom: 19rem; }
+    .shopping-secondary-card-button-link    { margin-top: 15rem; }
+}
+
+@media only screen and (min-width: 960px) {
+    .shopping-container-main-secondary-card { margin-bottom: 21.5rem; }
+    .shopping-container-secondary-card      { width: 94.3%; }
+    .shopping-secondary-card-button-link    { margin-top: 15rem; }
+}
+
+/** LARGE [TABLET, IPAD] **/
+@media only screen and (min-width: 992px) {
+    .shopping-container-main-secondary-card { margin-bottom: 20.5rem; }
+    .shopping-container-secondary-card      { width: 94.5%; }
+    .shopping-secondary-card-button-link    { margin-top: 18rem; }
+}
+
+/** EXTRA LARGE [TABLET, IPAD, NOTEBOOK, DESKTOP] **/
+@media only screen and (min-width: 1200px) {
+    .shopping-container-main-secondary-card { margin-bottom: 13.5rem; }
+    .shopping-container-secondary-card      { width: 91%; }
+    .shopping-secondary-card-button-link    { margin-top: 13rem; }
+}
+
+@media only screen and (min-width: 1366px) {
+    .shopping-container-main-secondary-card { margin-bottom: 15rem; }
+    .shopping-container-secondary-card      { width: 91.6%; }
+}
+
+@media only screen and (min-width: 1440px) {
+    .shopping-container-main-secondary-card { margin-bottom: 16rem; }
+    .shopping-container-secondary-card      { width: 92%; }
+}
+
+

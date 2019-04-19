@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Verdana';
+    font-weight: bold;
+    font-style:  normal;
+    src: url('../../fonts/microsoft/verdana/Verdana-Bold.eot');
+    src: url('../../fonts/microsoft/verdana/Verdana-Bold.eot?#iefix')       format('embedded-opentype'),
+         url('../../fonts/microsoft/verdana/Verdana-Bold.woff2')            format('woff2'),
+         url('../../fonts/microsoft/verdana/Verdana-Bold.woff')             format('woff'),
+         url('../../fonts/microsoft/verdana/Verdana-Bold.ttf')              format('truetype'),
+         url('../../fonts/microsoft/verdana/Verdana-Bold.svg#Verdana-Bold') format('svg');
+}
+
+@font-face {
+    font-family: 'Verdana';
+    font-weight: normal;
+    font-style:  normal;
+    src: url('../../fonts/microsoft/verdana/Verdana.eot');
+    src: url('../../fonts/microsoft/verdana/Verdana.eot?#iefix')            format('embedded-opentype'),
+         url('../../fonts/microsoft/verdana/Verdana.woff2')                 format('woff2'),
+         url('../../fonts/microsoft/verdana/Verdana.woff')                  format('woff'),
+         url('../../fonts/microsoft/verdana/Verdana.ttf')                   format('truetype'),
+         url('../../fonts/microsoft/verdana/Verdana.svg#Verdana')           format('svg');
+}
+

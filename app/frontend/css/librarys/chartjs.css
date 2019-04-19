@@ -1,0 +1,10 @@
+@media (orientation: portrait) {
+    .home-main-chart-container     { min-height: 40vh; }
+    .shopping-main-chart-container { min-height: 60vh; }
+
+}
+
+@media (orientation: landscape) {
+    .home-main-chart-container     { min-height: 39vh; }
+    .shopping-main-chart-container { min-height: 70vh; }
+}

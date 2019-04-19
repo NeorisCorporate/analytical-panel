@@ -1,0 +1,10 @@
+<div id="bodyLoadingSpinnerContainer" class="container-fluid body-loading-spinner-container d-flex flex-column justify-content-center align-items-center fixed-top h-100">
+    <div id="loadingSpinner">
+        {% if (templates.loadings.shopkeeperDetails or templates.loadings.shopkeeperComparative) %}
+        <img src="/images/loadings/graph.svg" alt="Aliasnce Shopping Centers Loading..." class="body-loading-spinner mx-auto d-block">
+        {% else %}
+        <img src="../images/loadings/graph.svg" alt="Aliasnce Shopping Centers Loading..." class="body-loading-spinner mx-auto d-block">
+        {% endif %}
+    </div>
+    <div><h1 class="body-loading-spinner-subtitle display-4">Carregando...</h1></div>
+</div>

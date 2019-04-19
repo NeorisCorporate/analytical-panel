@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>{{ head.titlePage }}</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="{{ head.author }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" href="/images/favicons/apple-icon-57x57.png"          sizes="57x57">
+    <link rel="apple-touch-icon" href="/images/favicons/apple-icon-60x60.png"          sizes="60x60">
+    <link rel="apple-touch-icon" href="/images/favicons/apple-icon-72x72.png"          sizes="72x72">
+    <link rel="apple-touch-icon" href="/images/favicons/apple-icon-76x76.png"          sizes="76x76">
+    <link rel="apple-touch-icon" href="/images/favicons/apple-icon-114x114.png"        sizes="114x114">
+    <link rel="apple-touch-icon" href="/images/favicons/apple-icon-120x120.png"        sizes="120x120">
+    <link rel="apple-touch-icon" href="/images/favicons/apple-icon-144x144.png"        sizes="144x144">
+    <link rel="apple-touch-icon" href="/images/favicons/apple-icon-152x152.png"        sizes="152x152">
+    <link rel="apple-touch-icon" href="/images/favicons/apple-icon-180x180.png"        sizes="180x180">
+    <link rel="icon" type="image/png" href="/images/favicons/android-icon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png"        sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png"        sizes="96x96">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png"        sizes="16x16">
+    <link rel="stylesheet" href="../css/frameworks/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/librarys/chartjs.css">
+    <link rel="stylesheet" href="../css/fonts/trebuchet.css">
+    <link rel="stylesheet" href="../css/fonts/verdana.css">
+    <link rel="stylesheet" href="../css/fonts/icons.css">
+    <link rel="stylesheet" href="../css/utilities/colors.css">
+    <link rel="stylesheet" href="../css/utilities/borders.css">
+    <link rel="stylesheet" href="../css/utilities/scrollbar.css">
+    <link rel="stylesheet" href="../css/utilities/loadings-spinners.css">
+    <link rel="stylesheet" href="../css/templates/headers/back.css">
+    <link rel="stylesheet" href="../css/templates/cards/graphs/mains/shopping.css">
+    <link rel="stylesheet" href="../css/templates/cards/graphs/secondarys/shopping.css">
+</head>
+<body class="scrollbar-lilac-1 bg-custom-lilac-2">
+    <!-- TEMPORÁRIO -->
+    {% include 'others/loading-spinner.njk' %}
+    
+    {% include 'headers/back.njk' %}
+    {% include 'cards/graphs/mains/shopping.njk' %}
+    {% include 'cards/graphs/secondarys/shopping.njk' %}
+
+    <!-- JAVASCRIPT CONFIGURATION -->
+    <script src="../js/librarys/jquery/jquery.slim.min.js"></script>
+    <script src="../js/librarys/popper/popper.min.js"></script>
+    <script src="../js/librarys/chartjs/chartjs.min.js"></script>
+    <script src="../js/frameworks/bootstrap/bootstrap.min.js"></script>
+    <script src="../js/scripts/others/loading-spinner.js"></script>
+
+        <!-- TEMPORÁRIO -->
+        <script>
+                const loadingSpinnerContainer = document.getElementById('loadingSpinner');
+                const loadingSpinner = new LoadingSpinner();
+                loadingSpinner.removeBodyScroll();
+        
+                const timeout = setTimeout(() => { 
+                    loadingSpinner.activeBodyScroll();
+                    loadingSpinner.removeBodyLoadingContainer();
+                }, 3000);
+            </script>
+
+    <!-- TEMPORÁRIO -->
+    <script>
+            /* VENDA CHART */
+            var ctx = document.getElementById("mainChartjs").getContext('2d');
+            var myChart1 = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ["label1", "label2", "label3", "label4"],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [14, 14, 34, 38],
+                        backgroundColor: [
+                            'rgb(199, 251, 144)',
+                            'rgb(255, 247, 146)',
+                            'rgb(254, 208, 148)',
+                            'rgb(144, 235, 254)',
+                        ],
+                        borderColor: [
+                            'rgba(0,0,0,0.3)',
+                            'rgba(0,0,0,0.3)',
+                            'rgba(0,0,0,0.3)',
+                            'rgba(0,0,0,0.3)',
+                            'rgba(0,0,0,0.3)',
+                            'rgba(0,0,0,0.3)',
+                            'rgba(0,0,0,0.3)',
+                            'rgba(0,0,0,0.3)',
+                            'rgba(0,0,0,0.3)',
+                            'rgba(0,0,0,0.3)',
+                            'rgba(0,0,0,0.3)',
+                            'rgba(0,0,0,0.3)',
+                        ],
+                        borderWidth: 1,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    legend: { display: false },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                display: false,
+                                fontColor: "rgb(255,255,255)"
+                            },
+                            gridLines: {
+                                display: false,
+                                drawBorder: false
+                            },
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                display: false,
+                                fontSize: 15,
+                                fontColor: "rgb(255,255,255)"
+                            },
+                            gridLines: {
+                                display: false,
+                                drawBorder: false
+                            }
+                        }]
+                    },
+                    animation: {
+                        duration: 5000,
+                        onProgress: function () {
+                            var chartInstance = this.chart,
+                                ctx = chartInstance.ctx;
+                            ctx.font = Chart.helpers.fontString('17', 'normal', Chart.defaults.global.defaultFontFamily);
+                            ctx.fillStyle = 'white';
+                            ctx.textAlign = 'center';
+                            ctx.textBaseline = 'bottom';
+                            Chart.helpers.each(this.data.datasets.forEach(function (dataset, i) {
+                                var meta = chartInstance.controller.getDatasetMeta(i);
+                                Chart.helpers.each(meta.data.forEach(function (bar, index) {
+                                    var centerPoint = bar.getCenterPoint();
+                                    ctx.fillText(dataset.data[index], centerPoint.x, centerPoint.y);
+                                }), this);
+                            }), this);
+                        },
+                        onComplete: function () {
+                            var chartInstance = this.chart,
+                                ctx = chartInstance.ctx;
+                            ctx.font = Chart.helpers.fontString('17', 'normal', Chart.defaults.global.defaultFontFamily);
+                            ctx.fillStyle = 'white';
+                            ctx.textAlign = 'center';
+                            ctx.textBaseline = 'bottom';
+                            Chart.helpers.each(this.data.datasets.forEach(function (dataset, i) {
+                                var meta = chartInstance.controller.getDatasetMeta(i);
+                                Chart.helpers.each(meta.data.forEach(function (bar, index) {
+                                    var centerPoint = bar.getCenterPoint();
+                                    ctx.fillText(dataset.data[index], centerPoint.x, centerPoint.y);
+                                }), this);
+                            }), this);
+                        }
+                    }
+                },
+                plugins: [{
+                    beforeDraw: function (chart) {
+                    var width = chart.chart.width,
+                        height = chart.chart.height,
+                        ctx = chart.chart.ctx;
+
+                    ctx.restore();
+                    var fontSize = (height / 350).toFixed(2);
+                    ctx.font = fontSize + "em sans-serif";
+                    ctx.textBaseline = "middle";
+                    ctx.fillStyle =    'white';
+
+                    var text1 = "Quarterly",
+                        textX1 = Math.round((width - ctx.measureText(text1).width) / 1.99),
+                        textY1 = height / 2.17;
+                        ctx.fillText(text1, textX1, textY1);
+
+                    var text2 = "Revenue",
+                        textX2 = Math.round((width - ctx.measureText(text2).width) / 1.99),
+                        textY2 = height / 1.9;
+                        ctx.fillText(text2, textX2, textY2);
+
+                        ctx.save();
+                }
+                }]
+            });
+   
+            /* LEBLON CHART */
+            var ctx = document.getElementById("leblonChart").getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ["lazer", "megaloja", "âncora", "satélite"],
+                    datasets: [{
+                        label: 'TÍTULO DA LABEL',
+                        data: [10, 10, 10, 10],
+                        backgroundColor: [
+                            'rgb(196, 255, 191)',
+                            'rgb(196, 255, 191)',
+                            'rgb(196, 255, 191)',
+                            'rgb(196, 255, 191)',
+                        ],
+                        borderColor: [
+                            'rgba(0,0,0,0.3)',
+                            'rgba(0,0,0,0.3)',
+                            'rgba(0,0,0,0.3)',
+                            'rgba(0,0,0,0.3)',
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    legend: { display: false },
+                    scales: {
+                        yAxes: [{
+                            ticks: { display: false },
+                            gridLines: {
+                                display: false,
+                                drawBorder: false
+                            },
+                        }],
+                        xAxes: [{
+                            ticks: { 
+                                display: true,
+                                fontColor: 'white'
+                            },
+                            gridLines: {
+                                display: false,
+                                drawBorder: false
+                            }
+                        }]
+                    },
+                }
+            });
+  
+            /* VIA PARQUE CHART */
+            var ctx = document.getElementById("viaparqueChart").getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ["lazer", "megaloja", "âncora", "satélite"],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [10, 10, 10, 10],
+                        backgroundColor: [
+                            'rgb(255,192, 187)',
+                            'rgb(255,192, 187)',
+                            'rgb(255,192, 187)',
+                            'rgb(255,192, 187)',
+                        ],
+                        borderColor: [
+                            'rgba(0,0,0,0.3)',
+                            'rgba(0,0,0,0.3)',
+                            'rgba(0,0,0,0.3)',
+                            'rgba(0,0,0,0.3)',
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    legend: { display: false },
+                    scales: {
+                        yAxes: [{
+                            ticks: { display: false },
+                            gridLines: {
+                                display:    false,
+                                drawBorder: false
+                            },
+                        }],
+                        xAxes: [{
+                            ticks: { 
+                                display: true,
+                                fontSize: 12,
+                                fontColor: 'white' 
+                                },
+                            gridLines: {
+                                display:    false,
+                                drawBorder: false
+                            }
+                        }]
+                    },
+                }
+            });
+    </script>
+</body>
+</html>

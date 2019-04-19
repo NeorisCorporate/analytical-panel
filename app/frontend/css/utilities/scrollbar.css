@@ -1,0 +1,25 @@
+/* TRANSPARENT STYLE */
+.scrollbar-transparent::-webkit-scrollbar { background-color: transparent !important; }
+
+/* LILAS CLARO STYLE */
+.scrollbar-lilac-1::-webkit-scrollbar {
+    width: 0.6%;
+    background-color: transparent !important; 
+}
+
+.scrollbar-lilac-1::-webkit-scrollbar-thumb {
+    background-color: var(--lilac-1) !important; 
+    border-radius: 1px;
+}
+
+/* LILAS ESCURO STYLE */
+.scrollbar-lilac-2::-webkit-scrollbar {
+    width: 0.6%;
+    background-color: transparent !important; 
+}
+
+.scrollbar-lilac-2::-webkit-scrollbar-thumb {
+    background-color: var(--lilac-2) !important; 
+    border-radius: 1px;
+}
+

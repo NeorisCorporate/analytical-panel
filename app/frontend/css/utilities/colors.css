@@ -1,0 +1,31 @@
+:root {
+    --blue-aliansce:  rgb(70,128,160);
+    --green-aliansce: rgb(108,176,105);
+
+    --lilac-1: rgb(202, 216, 229);
+    --lilac-2: rgb(111, 117, 167);
+    --green-1: rgb(132, 203, 143);
+    --red-1:   rgb(248, 139, 132);
+}
+
+
+/* BACKGROUND'S COLOR'S */
+.bg-custom-blue-aliansce  { background-color: var(--blue-aliansce)  !important; }
+.bg-custom-green-aliansce { background-color: var(--green-aliansce) !important; }
+
+.bg-custom-lilac-1 { background-color: var(--lilac-1) !important; }
+.bg-custom-lilac-2 { background-color: var(--lilac-2) !important; }
+
+.bg-custom-success { background-color: var(--green-1) !important; }
+.bg-custom-danger  { background-color: var(--red-1)   !important; }
+
+/* TEXT COLOR'S */
+.text-custom-blue-aliansce  { color: var(--blue-aliansce)  !important; }
+.text-custom-green-aliansce { color: var(--green-aliansce) !important; }
+
+.text-custom-lilac-1   { color: var(--lilac-1) !important; }
+.text-custom-lilac-2   { color: var(--lilac-2) !important; }
+
+.text-custom-success { color: var(--green-1) !important; }
+.text-custom-danger  { color: var(--red-1)   !important; }
+

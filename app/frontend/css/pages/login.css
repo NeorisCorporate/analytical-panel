@@ -1,0 +1,60 @@
+html,
+body {
+    height: 100%;
+    background-color: white;
+}
+
+/* REMOVE FORCED YELLOW INPUT BACKGROUND-COLOR */
+input:-webkit-autofill { -webkit-box-shadow: inset 0 0 0px 9999px var(--white) !important; }
+
+/** EXTRA SMALL [SMARTPHONES] **/
+@media only screen and (min-width: 320px) {
+    .img-aliansce-logotype    { width: 65%; }
+    .invalid-backend-feedback { font-size: 0.8rem; }
+}
+
+/** EXTRA SMALL TO LARGE [SMARTPHONES] IN LANDSCAPE. CORRECTION FOR [IPHONE X, PIXEL 2XL] **/
+@media only screen and (min-width: 480px) and (max-width: 960px) and (orientation: landscape){
+    body { 
+        background-color: white !important; 
+    }
+    
+    .card {
+        margin-top: 6.5rem;
+        border:     none !important;
+        box-shadow: none !important;
+    }
+
+    .img-aliansce-logotype { width: 50%; }
+}
+
+/** SMALL [SMARTPHONES] **/
+@media only screen and (min-width: 576px) {}
+
+/** MEDIUM [TABLET, IPAD]**/
+@media only screen and (max-width: 767px) {
+    .card {
+        border:     none !important;
+        box-shadow: none !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: #2193b0;
+        background-color: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+        background-color: linear-gradient(to right, #6dd5ed, #2193b0);
+    }
+
+    .card { width: 35rem; }
+}
+
+/** LARGE [TABLET, IPAD] **/
+@media only screen and (min-width: 992px) {
+    .img-aliansce-logotype { width: 55%; }
+}
+
+/** EXTRA LARGE [TABLET, IPAD, NOTEBOOK, DESKTOP] **/
+@media only screen and (min-width: 1200px) {
+    .img-aliansce-logotype { width: 45%; }
+}

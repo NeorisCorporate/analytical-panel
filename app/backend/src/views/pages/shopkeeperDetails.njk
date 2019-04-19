@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>{{ head.titlePage }}</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="{{ head.author }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" href="/images/favicons/apple-icon-57x57.png"          sizes="57x57">
+    <link rel="apple-touch-icon" href="/images/favicons/apple-icon-60x60.png"          sizes="60x60">
+    <link rel="apple-touch-icon" href="/images/favicons/apple-icon-72x72.png"          sizes="72x72">
+    <link rel="apple-touch-icon" href="/images/favicons/apple-icon-76x76.png"          sizes="76x76">
+    <link rel="apple-touch-icon" href="/images/favicons/apple-icon-114x114.png"        sizes="114x114">
+    <link rel="apple-touch-icon" href="/images/favicons/apple-icon-120x120.png"        sizes="120x120">
+    <link rel="apple-touch-icon" href="/images/favicons/apple-icon-144x144.png"        sizes="144x144">
+    <link rel="apple-touch-icon" href="/images/favicons/apple-icon-152x152.png"        sizes="152x152">
+    <link rel="apple-touch-icon" href="/images/favicons/apple-icon-180x180.png"        sizes="180x180">
+    <link rel="icon" type="image/png" href="/images/favicons/android-icon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png"        sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png"        sizes="96x96">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png"        sizes="16x16">
+    <link rel="stylesheet" href="/css/frameworks/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/librarys/chartjs.css">
+    <link rel="stylesheet" href="/css/fonts/icons.css">
+    <link rel="stylesheet" href="/css/utilities/colors.css">
+    <link rel="stylesheet" href="/css/utilities/scrollbar.css">
+    <link rel="stylesheet" href="/css/utilities/loadings-spinners.css">
+    <link rel="stylesheet" href="/css/templates/headers/back.css">
+    <link rel="stylesheet" href="/css/templates/cards/mains/shopkeeper.css">
+    <link rel="stylesheet" href="/css/templates/cards/secondarys/shopkeeperDetails.css">
+</head>
+<body class="scrollbar-lilac-2 p-0">
+    <!-- TEMPORÁRIO -->
+    {% include 'others/loading-spinner.njk' %}
+    
+    <!-- TEMPLATES [HEADERS, BUTTONS, CARDS]-->
+    {% include 'headers/back.njk' %}
+    {% include 'cards/mains/shopkeeper.njk' %}
+    {% include 'cards/secondarys/shopkeeperDetails.njk' %}
+
+    <!-- JAVASCRIPT CONFIGURATION -->
+    <script src="/js/librarys/jquery/jquery.slim.min.js"></script>
+    <script src="/js/librarys/popper/popper.min.js"></script>
+    <script src="/js/frameworks/bootstrap/bootstrap.min.js"></script>
+    <script src="/js/scripts/others/loading-spinner.js"></script>
+
+        <!-- TEMPORÁRIO -->
+        <script>
+                const loadingSpinnerContainer = document.getElementById('loadingSpinner');
+                const loadingSpinner = new LoadingSpinner();
+                loadingSpinner.removeBodyScroll();
+        
+                const timeout = setTimeout(() => { 
+                    loadingSpinner.activeBodyScroll();
+                    loadingSpinner.removeBodyLoadingContainer();
+                }, 3000);
+            </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Trebuchet MS';
+    font-weight: normal;
+    font-style:  normal;
+    src: url('../../fonts/microsoft/trebuchet/TrebuchetMS.eot');
+    src: url('../../fonts/microsoft/trebuchet/TrebuchetMS.eot?#iefix')                format('embedded-opentype'),
+         url('../../fonts/microsoft/trebuchet/TrebuchetMS.woff2')                     format('woff2'),
+         url('../../fonts/microsoft/trebuchet/TrebuchetMS.woff')                      format('woff'),
+         url('../../fonts/microsoft/trebuchet/TrebuchetMS.ttf')                       format('truetype'),
+         url('../../fonts/microsoft/trebuchet/TrebuchetMS.svg#TrebuchetMS')           format('svg');
+}
+
+@font-face {
+    font-family: 'Trebuchet MS';
+    font-weight:  bold;
+    font-style:   normal;
+    src: url('../../fonts/microsoft/trebuchet/TrebuchetMS-Bold.eot');
+    src: url('../../fonts/microsoft/trebuchet/TrebuchetMS-Bold.eot?#iefix')           format('embedded-opentype'),
+         url('../../fonts/microsoft/trebuchet/TrebuchetMS-Bold.woff2')                format('woff2'),
+         url('../../fonts/microsoft/trebuchet/TrebuchetMS-Bold.woff')                 format('woff'),
+         url('../../fonts/microsoft/trebuchet/TrebuchetMS-Bold.ttf')                  format('truetype'),
+         url('../../fonts/microsoft/trebuchet/TrebuchetMS-Bold.svg#TrebuchetMS-Bold') format('svg');
+}
+

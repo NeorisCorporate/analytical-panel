@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>{{ head.titlePage }}</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="{{ head.author }}">
+    <meta name="description" content="{{ head.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" href="../images/favicons/apple-icon-57x57.png"          sizes="57x57">
+    <link rel="apple-touch-icon" href="../images/favicons/apple-icon-60x60.png"          sizes="60x60">
+    <link rel="apple-touch-icon" href="../images/favicons/apple-icon-72x72.png"          sizes="72x72">
+    <link rel="apple-touch-icon" href="../images/favicons/apple-icon-76x76.png"          sizes="76x76">
+    <link rel="apple-touch-icon" href="../images/favicons/apple-icon-114x114.png"        sizes="114x114">
+    <link rel="apple-touch-icon" href="../images/favicons/apple-icon-120x120.png"        sizes="120x120">
+    <link rel="apple-touch-icon" href="../images/favicons/apple-icon-144x144.png"        sizes="144x144">
+    <link rel="apple-touch-icon" href="../images/favicons/apple-icon-152x152.png"        sizes="152x152">
+    <link rel="apple-touch-icon" href="../images/favicons/apple-icon-180x180.png"        sizes="180x180">
+    <link rel="icon" type="image/png" href="../images/favicons/android-icon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="../images/favicons/favicon-32x32.png"        sizes="32x32">
+    <link rel="icon" type="image/png" href="../images/favicons/favicon-96x96.png"        sizes="96x96">
+    <link rel="icon" type="image/png" href="../images/favicons/favicon-16x16.png"        sizes="16x16">
+    <link rel="stylesheet" href="../css/frameworks/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/librarys/particlesjs.css">
+    <link rel="stylesheet" href="../css/librarys/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../css/effects/label-float.css">
+    <link rel="stylesheet" href="../css/utilities/loadings-spinners.css">
+    <link rel="stylesheet" href="../css/pages/login.css">
+</head>
+<body>
+    <!-- templates [particlejs] -->
+    {% include 'others/particlesjs.njk' %}
+
+    <!-- form-container [login] -->
+    <main class="h-100">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div>
+                <!-- templates [login] -->
+                {% include 'cards/login.njk' %}
+            </div>
+        </div>
+    </main>
+
+    <!-- JAVASCRIPT CONFIGURATION -->
+    <script src="../js/librarys/jquery/jquery.slim.min.js"></script>
+    <script src="../js/librarys/popper/popper.min.js"></script>
+    <script src="../js/frameworks/bootstrap/bootstrap.min.js"></script>
+    <script src="../js/frameworks/bootstrap/validate/form.js"></script>
+    <script src="../js/librarys/particlesjs/particlesjs.min.js"></script>
+    <script src="../js/librarys/particlesjs/config.js"></script>
+    <script src="../js/librarys/axios/axios.min.js"></script>
+    <script src="../js/scripts/services/HTTP.js"></script>
+    <script src="../js/scripts/others/loading-spinner.js"></script>
+    <script src="../js/scripts/forms/controller.js"></script>
+    <script src="../js/scripts/forms/login.js"></script>
+    <script src="../js/scripts/onload/page/login.js"></script>
+</body>
+</html>

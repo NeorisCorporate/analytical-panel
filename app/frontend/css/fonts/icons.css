@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'analyticals-panel-project';
+  font-weight: normal;
+  font-style:  normal;
+  src:  url('../../fonts/icons/analyticals-panel-project.eot?lhd2n0');
+  src:  url('../../fonts/icons/analyticals-panel-project.eot?lhd2n0#iefix')                   format('embedded-opentype'),
+        url('../../fonts/icons/analyticals-panel-project.ttf?lhd2n0')                         format('truetype'),
+        url('../../fonts/icons/analyticals-panel-project.woff?lhd2n0')                        format('woff'),
+        url('../../fonts/icons/analyticals-panel-project.svg?lhd2n0#analytics-panel-project') format('svg');
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family:    'analyticals-panel-project' !important;
+  font-style:     normal;
+  font-weight:    normal;
+  font-variant:   normal;
+  speak:          none;
+  text-transform: none;
+  line-height:    1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing:  antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu-hamburguer:before { content: "\e900"; }
+.icon-menu-options:before    { content: "\e901"; }
+.icon-triangle-down:before   { content: "\e902"; }
+.icon-triangle-up:before     { content: "\e903"; }
+.icon-back-arrow:before      { content: "\e904"; }
+.icon-close:before           { content: "\e905"; }
+.icon-go-arrow:before        { content: "\e906"; }

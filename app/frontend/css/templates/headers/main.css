@@ -1,0 +1,12 @@
+.navbar-brand { font-size: 1rem; }
+
+.header-button-filter:hover     { color: white !important; }
+.header-dropdown-menu-kpi:hover { color: white !important; }
+
+.header-dropdown-menu-useraccount::after { display: none !important; }
+.bootstrap-select .header-dropdown-menu-kpi.dropdown-toggle:focus { outline: none !important; }
+
+/** MEDIUM [TABLET, IPAD]**/
+@media only screen and (min-width: 768px) {
+    .header-img-dropdown-menu-useraccount { width: 25px; }
+}
